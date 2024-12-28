@@ -3,7 +3,6 @@
 -- Add any additional keymaps here
 
 vim.keymap.set("i", "jj", "<Esc>")
-vim.keymap.set("n", "<leader>w", ":w<CR>", { desc = "Write Current Buffer", remap = true })
-vim.keymap.set("n", "<leader>q", ":q<CR>", { desc = "Quit" })
-vim.keymap.set("n", "<leader>e", ":e ", { desc = "Open Edit Prompt" })
-vim.keymap.set("n", "<leader>l", ":Neotree focus left<CR>", { desc = "Open File Tree" })
+vim.keymap.set("n", "<leader>w", "<cmd>w<cr>", { desc = "Write Current Buffer", remap = true })
+vim.keymap.set("n", "<leader>q", "<cmd>q<cr>", { desc = "Quit" })
+vim.keymap.set("n", "<leader>l", "<cmd>Neotree focus left<cr>", { desc = "Open File Tree" })
