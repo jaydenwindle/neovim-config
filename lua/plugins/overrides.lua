@@ -1,4 +1,10 @@
 return {
+  -- disable bufferline
+  {
+    "akinsho/bufferline.nvim",
+    enabled = false,
+  },
+
   -- super-tab + enter completion
   {
     "saghen/blink.cmp",
