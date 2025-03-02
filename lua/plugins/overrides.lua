@@ -5,6 +5,22 @@ return {
     enabled = false,
   },
 
+  -- fix vstls errors
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        vtsls = {
+          settings = {
+            vtsls = {
+              autoUseWorkspaceTsdk = false,
+            },
+          },
+        },
+      },
+    },
+  },
+
   -- super-tab + enter completion
   {
     "saghen/blink.cmp",
